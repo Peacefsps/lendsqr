@@ -9,10 +9,10 @@ import vector from "./Vector.svg";
 export default function NavBar() {
     return (
       <div className="NavBar">
-        <div className="nav-bar d-flex justify-content-between align-items-center mb-5">
-          <div>
+        <div className="nav-bar d-flex justify-content-between align-items-center">
+          <a href="/Homepage">
             <img src={logo} alt="logo" />
-          </div>
+          </a>
           <div className="form">
             <input type="search" placeholder="Search for anything" />
             <button>
@@ -25,7 +25,7 @@ export default function NavBar() {
             </a>
             <img src={notification} alt="notification" />
             <img src={avatar} alt="avatar" width={48} />
-            <a href="ade.com" rel="noopener noreferrer" className="user-name">
+            <a href="/" rel="noopener noreferrer" className="user-name">
               Adedeji
             </a>
             <img src={dropdown} alt="dropdown" />

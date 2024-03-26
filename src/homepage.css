@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+.formpage {
+    margin-left: 90px;
+}
+.formpage h1 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 54px;
+    font-family: Work Sans;
+    color: #213F7D;
+}
+.formpage p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+    font-family: Work Sans;
+    color: #545F7D;
+}
+.formpage input[type=text], input[type=password], input[type=submit] {
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid rgba(84, 95, 125, 0.15);
+    width: 400px;
+    margin-bottom: 14px;
+}
+.formpage a {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    font-family: Work Sans;
+    color: #39CDCC;
+    text-decoration: none;
+}
+.formpage input[type=submit] {
+    background-color: #39CDCC;
+    border-radius: 8px;
+    border: none;
+    margin-top: 14px;
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    font-family: Work Sans;
+}
