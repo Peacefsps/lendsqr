@@ -3,9 +3,9 @@ import homeicon from './homeicon.svg';
 import lendsqr from './lendsqr.svg';
 import './homepage.css';
 
-export default function Homepage() {
+export default function LogIn() {
     return (
-      <div className="Homepage">
+      <div className="LogIn">
         <a href="/Homepage">
           <img src={lendsqr} alt="Icon" />
         </a>
