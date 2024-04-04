@@ -14,7 +14,7 @@ export default function Customers() {
       <div className="UsersList">
         <div className="side-bar-list">
           <h2>CUSTOMERS</h2>
-          <div className="side-bar-main">
+          <div className="side-bar-main active">
             <img src={userfriends} alt="user" />
             <p>Users</p>
           </div>

@@ -6,12 +6,15 @@ import activeuser from "./activeuser.svg";
 import loanuser from "./loanuser.svg";
 import savingsuser from "./savingsuser.svg";
 import filter from "./filter.svg";
-
+import eyes from "./eyes.svg";
+import blacklist from "./blacklist.svg";
+import activate from "./activate.svg";
 
 export default function MainPage() {
   const [tableData, setTableData] = useState([]);
   const [loaded, setLoaded] = useState(false);
   const [selectedOption, setSelectedOption] = useState(10);
+  const [activeBtn, setactiveBtn] = useState(null);
 
   function userData(response) {
     setTableData(response.data);
@@ -26,6 +29,11 @@ export default function MainPage() {
     setSelectedOption(parseInt(event.target.value));
   }
 
+  function handleButtonClick(buttonId) {
+    setactiveBtn(buttonId === activeBtn ? null : buttonId);
+  }
+
+  
   if (loaded) {
     return (
       <div className="main">
@@ -85,6 +93,28 @@ export default function MainPage() {
                   <td>{tabledata.phone}</td>
                   <td>{tabledata.date}</td>
                   <td>{tabledata.status}</td>
+                  <td className="position-relative">
+                        <button className="dot" onClick={() => handleButtonClick(index)}></button>
+                        {activeBtn === index && (
+                          <div className="dot-option">
+                          <div>
+                            <span>
+                              <img src={eyes} alt="eyes" /> View Details
+                            </span>
+                          </div>
+                          <div>
+                            <span>
+                              <img src={blacklist} alt="blacklist" /> Blacklist User
+                            </span>
+                          </div>
+                          <div>
+                            <span>
+                              <img src={activate} alt="activate" /> Activate User
+                            </span>
+                          </div>
+                        </div>
+                        )}
+                  </td>
                 </tr>
               ))}
             </tbody>

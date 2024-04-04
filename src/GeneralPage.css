@@ -109,18 +109,14 @@
 }
 .fourth-div {
     box-shadow: 3px 5px 20px 0px rgba(0, 0, 0, 0.08);
-    padding: 24px;
-}
-.fourth-div div {
-    margin-bottom: 12px;
-    /* border-bottom: 1px solid #545F7D; */
+    padding: 24px 24px 0 24px;
 }
 .fourth-div h3 {
     color: #213F7D;
     font-weight: 500;
     font-size: 16px;
     line-height: 19px;
-    margin-bottom: 16px;
+    /* margin-bottom: 16px; */
 }
 .fourth-div h5 {
     font-weight: 400;
