@@ -46,11 +46,6 @@
   display: flex;
   justify-content: space-between;
 }
-/* .section::after {
-    content: "";
-    display: table;
-    clear: both;
-} */
 .side-bar {
   box-shadow: 3px 5px 20px 0px rgba(0, 0, 0, 0.04);
   margin-right: 12px;
@@ -133,8 +128,59 @@
 .table-row {
     box-shadow: 3px 5px 20px 0px rgba(0, 0, 0, 0.06);
     padding: 16px;
-    /* z-index: -1; */
     position: relative;
+}
+.filter-btn {
+    border: none;
+    background: unset;
+    cursor: pointer;
+}
+.filter-page {
+  background: white;
+  border-radius: 4px;
+  border: 1px solid rgba(33, 63, 125, 0.06);
+  padding: 16px;
+  position: absolute;
+  z-index: 1;
+  /* top: 0px;
+  right: 0px; */
+}
+.filter-page label {
+  margin-bottom: 4px;
+  font-family: Work Sans;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+}
+.filter-page input[type=text], input[type=email], input[type=date], input[type=tel], select {
+  padding: 12px;
+  width: 230px;
+  margin-bottom: 10px;
+  border: 1px solid rgba(84, 95, 125, 0.4);
+  border-radius: 8px;
+  font-family: Work Sans;
+  font-weight: 400;
+  font-size: 14px;
+}
+.filter-footer button {
+  padding: 12px 14px;
+  width: 98px;
+  background-color: white;
+  border-radius: 8px;
+  font-family: Work Sans;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+}
+.filter-footer button:nth-child(1) {
+  border: 1px solid rgba(84, 95, 125, 1);
+  color: rgba(84, 95, 125, 1);
+  margin-right: 10px;
+}
+.filter-footer button:nth-child(2) {
+  color: white;
+  background: rgba(57, 205, 204, 1);
+  border: 1px solid rgba(57, 205, 204, 1);
 }
 th {
   font-family: Work Sans;
@@ -167,7 +213,6 @@ td {
 }
 .dot-option {
   position: absolute;
-  /* display: none; */
   box-shadow: 3px 5px 20px 0px rgba(0, 0, 0, 0.06);
   padding: 12px 16px;
   width: 160px;
