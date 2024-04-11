@@ -14,7 +14,8 @@ export default function MainPage() {
   const [loaded, setLoaded] = useState(false);
   const [selectedOption, setSelectedOption] = useState(10);
   const [activeBtn, setactiveBtn] = useState(null);
-  const [filterBtn, setFilterBtn] = useState(false)
+  const [filterBtn, setFilterBtn] = useState(false);
+
 
   function userData(response) {
     setTableData(response.data);
@@ -50,7 +51,7 @@ export default function MainPage() {
         <div className="table-row">
           <table>
             <thead>
-              <tr className="position-relative">
+              <tr>
                 <th>
                   ORGANIZATION{" "}
                   <button className="filter-btn" onClick={handleFilter}>
@@ -98,8 +99,8 @@ export default function MainPage() {
                   <td>{tabledata.email}</td>
                   <td>{tabledata.phone}</td>
                   <td>{tabledata.date}</td>
-                  <td>{tabledata.status}</td>
-                  <td className="position-relative">
+                  <td className="status-style">{tabledata.status}</td>
+                  <td>
                     <button
                       className="dot"
                       onClick={() => handleButtonClick(index)}

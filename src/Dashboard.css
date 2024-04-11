@@ -152,7 +152,7 @@
   font-size: 14px;
   line-height: 16px;
 }
-.filter-page input[type=text], input[type=email], input[type=date], input[type=tel], select {
+.filter-page input[type=text], input[type=email], input[type=date], input[type=tel], .filter-page select {
   padding: 12px;
   width: 230px;
   margin-bottom: 10px;
@@ -188,7 +188,7 @@ th {
   font-size: 12px;
   line-height: 14px;
   color: #545f7d;
-  padding-right: 36px;
+  padding-right: 24px;
 }
 td {
   font-family: Work Sans;
@@ -256,3 +256,12 @@ footer select {
 .LogIn {
   margin: 24px 48px;
 }
+/* .status-style {
+  color: rgba(57, 205, 98, 1);
+  background-color: rgba(57, 205, 98, 0.05);
+  padding: 0;
+  border-radius: 12px;
+  border: 1px solid transparent;
+  text-align: center;
+  height: 20px;
+} */
